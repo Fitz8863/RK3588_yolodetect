@@ -51,7 +51,7 @@ cd RK3588_yolodetect
 
 ### 代码文件结构
 
-![image-20251106214318279](README_images\image-20251106214318279.png)
+![image-20251106214318279](README_images/image-20251106214318279.png)
 
 这里可以看到有两个文件夹，其中signal_threaded 这个目录下是表示使用单线程去推理；thread_pool 是使用线程池去推理
 
@@ -59,7 +59,7 @@ cd RK3588_yolodetect
 - detect_video.py：表示单线程下，视频推理的执行入口代码
 - detect_video_threadpooll.py：表示线程池下，视频推理的执行入口代码
 
-![image-20251106220737886](README_images\image-20251106220737886.png)
+![image-20251106220737886](README_images/image-20251106220737886.png)
 
 在yoloFun文件夹可以看到有三个文件
 
@@ -75,25 +75,25 @@ cd RK3588_yolodetect
 
 1.下面是yolov5s.rknn的输入输出结构
 
-![image-20251106221633375](README_images\image-20251106221633375.png)
+![image-20251106221633375](README_images/image-20251106221633375.png)
 
 2.下面是yolov7.rknn的输入输出结构
 
-![image-20251106221728878](README_images\image-20251106221728878.png)
+![image-20251106221728878](README_images/image-20251106221728878.png)
 
 3.下面是yolov8s.rknn的输入输出结构
 
-![image-20251106221803656](README_images\image-20251106221803656.png)
+![image-20251106221803656](README_images/image-20251106221803656.png)
 
 ## 运行案例
 
 比如要运行yolov8的模型，首先去看到config.py文件，这里选择RKNN的模型
 
-![image-20251106223155641](README_images\image-20251106223155641.png)
+![image-20251106223155641](README_images/image-20251106223155641.png)
 
 然后去到你要执行的那个入口文件，比如detect_img.py ,然后修改这个推理函数的导入，如果是yolov8，那就导入yolov8_10（如果要推理yolov5就改成yolov5的就行了）
 
-![image-20251106223309735](README_images\image-20251106223309735.png)
+![image-20251106223309735](README_images/image-20251106223309735.png)
 
 执行下面这个语句
 
